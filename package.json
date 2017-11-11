@@ -18,7 +18,7 @@
     "redux-saga": "^0.16.0",
     "redux-thunk": "^2.2.0"
   },
-  "homepage" : "sevta.github.io/ufc",
+  "homepage" : "https://sevta.github.io/ufc",
   "scripts": {
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
