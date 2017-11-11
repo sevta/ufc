@@ -1,0 +1,71 @@
+.home {
+  width: 100%;
+  background: white; }
+
+.thumb {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; }
+  .thumb img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center; }
+
+.events-container {
+  width: 100%;
+  height: 160px;
+  background: #AE101D;
+  position: relative;
+  overflow: hidden; }
+  .events-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #bc4e9c;
+    background: -webkit-gradient(linear, left top, right top, from(#f80759), to(#bc4e9c));
+    background: linear-gradient(to right, #f80759, #bc4e9c);
+    opacity: 0;
+    z-index: 1; }
+  .events-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center; }
+  .events-container .title {
+    max-width: 141px;
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    background: #EA4C88;
+    padding: 0px 4px;
+    border-radius: 3px; }
+  .events-container .time {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 2;
+    color: white;
+    font-weight: bold; }
+  .events-container .fighters {
+    z-index: 3;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 30px;
+    left: 10px; }
