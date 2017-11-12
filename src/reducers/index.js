@@ -32,3 +32,12 @@ export const player = (state = playerState , action) => {
 			return state
 	}
 }
+
+const movieState = {}
+
+export const movie = (state = movieState , action) => {
+	switch (action.type) {
+		default:
+			return state
+	}
+ }

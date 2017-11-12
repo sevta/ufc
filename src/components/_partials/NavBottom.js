@@ -11,7 +11,9 @@ export default class NavBottom extends Component {
         <div className="nav-link">
           <Link to='/player'>Player</Link>
         </div>
-        <div className="nav-link">Favourite</div>
+        <div className="nav-link">
+          <Link to='/movie'>Movie</Link>
+        </div>
       </div>
     )
   }

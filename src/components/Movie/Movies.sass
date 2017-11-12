@@ -1,0 +1,101 @@
+.movieContainer 
+	width: 100%
+	height: 100%
+	position: relative
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	padding: 0px 5px
+	.movie
+		flex: 40%
+		height: 30%
+		overflow: hidden
+		margin: 5px
+		position: relative
+		box-shadow: 1px 2px 10px rgba(0,0,0,0.1)
+		border-radius: 6px
+		padding-bottom: 60px
+
+		@media (min-width: 1024px)
+			flex: 210px
+
+		.details
+			z-index: 3
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			background: white
+			padding: 10px
+			.rate
+				margin: 0px
+				color: deeppink
+			.title
+				font-size: 12px
+				color: #c4c4c4
+				margin: 0px
+				margin-bottom: 7px
+		img
+			width: 100%
+			height: 50%
+			object-fit: cover
+			object-position: center
+
+.form-m
+	border: solid 1px transparent
+	border-radius: 0
+	margin-bottom: -10px
+	margin-top: 10px
+	box-shadow: none
+	padding: 0px 10px
+
+.single_movie
+	width: 100%
+	position: relative
+	.info
+		width: 100%
+		padding: 15px
+		margin: 0 auto
+		background: white
+		// box-shadow: 1px 2px 10px rgba(0,0,0,0.1)
+		z-index: 2
+		position: relative
+		margin: 0 auto
+		// border-radius: 8px
+		.overview-s
+			font-size: 14px
+			color: #c4c4c4
+		.details-s
+			width: 100%
+			height: auto
+			display: flex
+			align-items: center
+			margin-bottom: 10px
+			.date-s ,
+			.runtime-s
+				font-size: 12px
+				color: #c4c4c4
+				font-style: italic
+				margin-right: 18px
+	.backdrop
+		width: 100%
+		height: 300px
+		position: relative
+		top: 0
+		left: 0
+		z-index: -1
+		.title-s
+			font-size: 19px
+			color: #fff
+			font-weight: bold
+			z-index: 3
+			position: absolute
+			bottom: 10px
+			left: 10px
+			opacity: .9
+		img
+			z-index: 0
+			width: 100%
+			height: 100%
+			object-position: center
+			object-fit: cover

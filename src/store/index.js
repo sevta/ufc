@@ -1,5 +1,5 @@
 import { createStore , combineReducers , applyMiddleware } from 'redux';
-import { player } from '../reducers';
+import { player , movie } from '../reducers';
 import axios from 'axios';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
@@ -7,7 +7,8 @@ import logger from 'redux-logger';
 const middleware = applyMiddleware(thunk , logger())
 
 export const store = (createStore(combineReducers({
-	player
+	player ,
+	movie
 })))
 
 
