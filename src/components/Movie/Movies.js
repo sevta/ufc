@@ -34,7 +34,9 @@ class Movie extends Component {
 	}
 
 	componentDidMount() {
-		this._fetch()
+		if (!this.state.fetched) {
+			this._fetch()
+		}
 	}
 
 	_onChangeIndex = index => {
@@ -61,7 +63,7 @@ class Movie extends Component {
 			<div>
 				<SwipeableViews index={index} onChangeIndex={this._onChangeIndex}>
 					<div>
-					<h1 style={{marginLeft: 12}}>Popular</h1>
+					<h1 style={{marginLeft: 12, marginTop: 15}}>Popular</h1>
 						<div className="form-group">
 							<select name="" id="" className="form-control form-m" onChange={this._sort}>
 								<option value="popularity.desc">Popular</option>
