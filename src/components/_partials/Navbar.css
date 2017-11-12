@@ -3,13 +3,11 @@
   height: 50px;
   background: white;
   position: fixed;
-  -webkit-box-shadow: 1px 2px 14px rgba(0, 0, 0, 0.05);
-          box-shadow: 1px 2px 14px rgba(0, 0, 0, 0.05);
   z-index: 8; }
   .navbar-u .menu-u {
     width: 240px;
     height: 100vh;
-    background: deeppink;
+    background: #111;
     z-index: 1;
     top: 0;
     left: -240px;
@@ -39,7 +37,7 @@
     .navbar-u .burger-menu .line {
       width: 100%;
       height: 2px;
-      background: deeppink;
+      background: #111;
       position: absolute;
       -webkit-transition: all .4s ease;
       transition: all .4s ease; }
@@ -50,11 +48,10 @@
       .navbar-u .burger-menu .line:nth-of-type(3) {
         top: calc(12px/1); }
   .navbar-u .title-u {
-    color: deeppink;
-    font-size: 21px;
+    color: #111;
+    font-size: 18px;
     text-align: center;
-    line-height: 50px;
-    font-weight: bold; }
+    line-height: 50px; }
 
 .nav-bottom {
   width: 100%;
@@ -90,5 +87,5 @@
     font-weight: 600; }
     .nav-bottom .nav-link a {
       text-decoration: none;
-      color: deeppink;
+      color: #111;
       font-weight: bold; }

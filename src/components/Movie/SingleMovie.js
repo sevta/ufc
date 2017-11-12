@@ -33,12 +33,25 @@ class SingleMovie extends Component {
 			<div className='single_movie'>
 				<div className="backdrop">
 					<div className="title-s">{single_movie.original_title}</div>
-					<img src={backdrop} alt=""/>
+					{single_movie.backdrop_path === null ? (
+						<img src='https://vignette.wikia.nocookie.net/obscure/images/7/76/Unknown-person.png/revision/latest?cb=20170102105750' alt=""/>
+					) : (
+						<img src={backdrop} alt=""/>
+					)}
 				</div>
 				<div className="info">
 					<div className="details-s">
 						<div className="date-s">{single_movie.release_date}</div>
 						<div className="runtime-s">{single_movie.runtime} min</div>
+					</div>
+					<div className="genre-s">
+						{single_movie.genres ? single_movie.genres.map((genre , i) => {
+							return (
+								<div className="genre">{genre.name}</div>
+							)
+						}) : null}
+					</div>
+					<div className="genre-s">
 					</div>
 					<div className="overview-s">{single_movie.overview}</div>
 					<div className="poster-s">

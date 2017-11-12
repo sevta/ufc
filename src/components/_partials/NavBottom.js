@@ -9,9 +9,6 @@ export default class NavBottom extends Component {
           <Link to='/'>Events</Link>
         </div>
         <div className="nav-link">
-          <Link to='/player'>Player</Link>
-        </div>
-        <div className="nav-link">
           <Link to='/movie'>Movie</Link>
         </div>
       </div>

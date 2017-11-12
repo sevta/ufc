@@ -41,7 +41,7 @@ export default class Navbar extends Component {
 					<span className="line"></span>
 					<span className="line"></span>
 				</div>
-				<div className="title-u">UeFCi Broh</div>
+				<div className="title-u">Movies</div>
 				<div className={toggle ? "menu-u active" : "menu-u"} onClick={this._toggle}>
 				</div>
 			</div>
